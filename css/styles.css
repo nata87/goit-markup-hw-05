@@ -434,6 +434,21 @@ img {
   letter-spacing: 0.02em;
 }
 
+.footer-form {
+}
+.footer-form-text {
+}
+.footer-form-subscribe {
+}
+.footer-form-label {
+}
+.footer-form-input {
+}
+.form-btn {
+}
+.footer-form-btn {
+}
+
 .socials-list {
   display: flex;
   gap: 16px;
