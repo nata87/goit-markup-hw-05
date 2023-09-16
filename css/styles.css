@@ -728,6 +728,127 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Reviews form styles */
+
+.modal-caption-accent {
+}
+.modal-form {
+}
+
+.modal-form-list {
+  margin-bottom: 8px;
+}
+.modal-form-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  color: var(--cl-subtle_text);
+}
+.modal-form-field {
+  position: relative;
+}
+.input-icon-modal {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-icon-modal:focus {
+  border-color: #4d5ae5;
+  fill: #4d5ae5;
+}
+.modal-form-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-icon-modal:focus + .modal-form-icon {
+  fill: #4d5ae5;
+}
+
+.modal-form-comment {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-comment:hover,
+.modal-form-comment:focus {
+  border-color: #4d5ae5;
+}
+.visually-hidden {
+}
+.user-privacy-text {
+  display: block;
+  margin-bottom: 24px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+
+  color: var(--cl-subtle_text);
+}
+
+.input-user-privacy:checked ~ .user-privacy-text .privacy-icon-style {
+  background-color: var(--cl-pressed_state);
+  border: none;
+  fill: var(--cl-icon-fill);
+}
+.input-user-privacy:checked ~ .user-privacy-text .privacy-icon-style svg {
+  scale: 1;
+}
+.input-user-privacy:focus:focus-visible
+  ~ .user-privacy-text
+  .privacy-icon-style {
+  border: 1px solid #404bbf;
+}
+
+.privacy-icon-style {
+}
+.privacy-icon {
+}
+.privacy {
+  color: var(--cl-primary_brand);
+  text-decoration: underline;
+  letter-spacing: 0.48px;
+}
+.link {
+}
+.btn-form {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin-right: auto;
+  margin-left: auto;
+
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .overlay-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
