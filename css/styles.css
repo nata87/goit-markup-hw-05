@@ -738,7 +738,9 @@ img {
   max-width: 100%;
   margin-bottom: 16px;
   text-align: center;
+  line-height: 1.5;
   font-weight: 500;
+  letter-spacing: 0.02em;
   color: var(--navyblue-modal-cl);
 }
 
