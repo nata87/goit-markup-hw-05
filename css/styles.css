@@ -691,6 +691,7 @@ img {
   width: 408px;
   min-height: 584px;
   position: absolute;
+  font-size: 16px;
 
   background: var(--modal_background-cl);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -734,12 +735,11 @@ img {
 /* Reviews form styles */
 
 .modal-caption {
-  font-weight: 500;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--navyblue-modal-cl);
+  max-width: 100%;
   margin-bottom: 16px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--navyblue-modal-cl);
 }
 
 .modal-caption-accent {
@@ -815,11 +815,14 @@ img {
 }
 .user-privacy-text {
   display: block;
-  margin-bottom: 24px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.48px;
-  color: var(--cl-subtle_text);
+  color: var(--lightslate-cl);
+}
+
+.user-privacy-text {
+  margin-bottom: 24px;
 }
 
 .user-privacy-form {
@@ -827,7 +830,7 @@ img {
 }
 
 .input-user-privacy:checked ~ .user-privacy-text .privacy-icon-style {
-  background-color: var(--cl-pressed_state);
+  background-color: var(--ocean-cl);
   border: none;
   fill: var(--cl-icon-fill);
 }
@@ -848,15 +851,18 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  fill: transparent;
+
   width: 16px;
   height: 16px;
-
+  cursor: pointer;
+  margin-right: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+  outline: 1px solid transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
 }
 
 .privacy {
