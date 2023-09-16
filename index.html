@@ -610,68 +610,69 @@
           Leave your contacts and we will call you back
           <span class="modal-caption-accent"></span>
         </p>
-        <form class="modal-form" name="reviews-form">
+        <div class="modal-form" name="reviews-form">
           <div class="modal-form-list">
-          <label class="modal-form-label" for="user-name">Name</label>
-          <div class="modal-form-field">
-            <input
-              class="input-icon-modal"
-              id="user-name"
-              type="text"
-              name="user-name"
+            <label class="modal-form-label" for="user-name">Name</label>
+            <div class="modal-form-field">
+              <input
+                class="input-icon-modal"
+                id="user-name"
+                type="text"
+                name="user-name"
+                required
+                minlength="3"
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+              <span class="error-message"></span>
+            </div>
+          </div>
+          <div class="modal-form-list">
+            <label class="modal-form-label" for="user-phone">Phone</label>
+            <div class="modal-form-field">
+              <input
+                class="input-icon-modal"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                minlength="12"
+                maxlength="12"
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form-list">
+            <label class="modal-form-label" for="user-email">Email</label>
+            <div class="modal-form-field">
+              <input
+                class="input-icon-modal"
+                type="email"
+                name="user-email"
+                id="user-email"
+                required
+                placeholder="example@mail.com"
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form-fourth">
+            <label class="modal-form-label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-form-comment"
+              name="user-comment"
+              id="user-comment"
+              rows="4"
+              placeholder="Text input"
               required
-              minlength="3"
-            />
-            <svg class="modal-form-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-name"></use>
-            </svg>
-            <span class="error-message"></span>
+              minlength="7"
+            ></textarea>
           </div>
-</div>
-<div class="modal-form-list">
-          <label class="modal-form-label" for="user-phone">Phone</label>
-          <div class="modal-form-field">
-            <input
-              class="input-icon-modal"
-              type="tel"
-              name="user-phone"
-              id="user-phone"
-              minlength="12"
-              maxlength="12"
-            />
-            <svg class="modal-form-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-          </div>
-</div>
-<div class="modal-form-list">
-  <form>
-          <label class="modal-form-label" for="user-email">Email</label>
-          <div class="modal-form-field">
-            <input
-              class="input-icon-modal"
-              type="email"
-              name="user-email"
-              id="user-email"
-              required
-              placeholder="example@mail.com"
-            />
-            <svg class="modal-form-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-          </div>
-<div class="modal-form-fourth">
-          <label class="modal-form-label" for="user-comment">Comment</label>
-          <textarea
-            class="modal-form-comment"
-            name="user-comment"
-            id="user-comment"
-            rows="4"
-            placeholder="Text input"
-            required
-            minlength="7"
-          ></textarea>
-</div>
+           <div class="user-privacy-form">
           <input
             class="visually-hidden"
             id="user-privacy"
@@ -688,7 +689,7 @@
             I accept the terms and conditions of the
             <a class="privacy link" href="" target="blank">Privacy Policy</a>
           </label>
-
+        </div>
           <button class="btn-form">Send</button>
         </form>
       </div>
