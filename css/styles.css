@@ -868,7 +868,7 @@ img {
 }
 
 .privacy {
-  color: var(--cl-primary_brand);
+  color: var(--iris-cl);
   text-decoration: underline;
   letter-spacing: 0.48px;
 }
