@@ -444,6 +444,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 .footer-form-subscribe {
   display: flex;
   gap: 24px;
@@ -683,12 +684,14 @@ img {
 }
 .modal {
   position: fixed;
+  padding: 72px 24px 24px 24px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
   min-height: 584px;
   position: absolute;
+
   background: var(--modal_background-cl);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -730,6 +733,15 @@ img {
 
 /* Reviews form styles */
 
+.modal-caption {
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--cl-dark);
+  margin-bottom: 16px;
+}
+
 .modal-caption-accent {
 }
 .modal-form {
@@ -738,6 +750,11 @@ img {
 .modal-form-list {
   margin-bottom: 8px;
 }
+
+.modal-form-fourth {
+  margin-bottom: 16px;
+}
+
 .modal-form-label {
   display: block;
   margin-bottom: 4px;
@@ -745,7 +762,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
 
-  color: var(--cl-subtle_text);
+  color: var(--lightslate-cl);
 }
 .modal-form-field {
   position: relative;
