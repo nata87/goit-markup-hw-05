@@ -802,7 +802,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.48px;
-
+  margin-bottom: 24px;
   color: var(--cl-subtle_text);
 }
 
@@ -814,6 +814,7 @@ img {
 .input-user-privacy:checked ~ .user-privacy-text .privacy-icon-style svg {
   scale: 1;
 }
+
 .input-user-privacy:focus:focus-visible
   ~ .user-privacy-text
   .privacy-icon-style {
@@ -829,8 +830,7 @@ img {
   text-decoration: underline;
   letter-spacing: 0.48px;
 }
-.link {
-}
+
 .btn-form {
   display: block;
   min-width: 169px;
