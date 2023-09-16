@@ -819,8 +819,11 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.48px;
-  margin-bottom: 24px;
   color: var(--cl-subtle_text);
+}
+
+.user-privacy-form {
+  margin-bottom: 24px;
 }
 
 .input-user-privacy:checked ~ .user-privacy-text .privacy-icon-style {
@@ -838,10 +841,24 @@ img {
   border: 1px solid #404bbf;
 }
 
-.privacy-icon-style {
-}
 .privacy-icon {
 }
+
+.privacy-icon-style {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  width: 16px;
+  height: 16px;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .privacy {
   color: var(--cl-primary_brand);
   text-decoration: underline;
